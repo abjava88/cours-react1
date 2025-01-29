@@ -1,4 +1,5 @@
 import Form from "./components/ch03/Form";
+import Test from "./components/ch03/Test";
 import Title from "./components/ch03/Title";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Title />
       <Title />
       <Form />
+      <Test />
     </div>
   );
 }
