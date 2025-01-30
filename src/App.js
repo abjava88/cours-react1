@@ -1,6 +1,8 @@
 import Form from "./components/ch03/Form";
 import Test from "./components/ch03/Test";
 import Title from "./components/ch03/Title";
+import Title2 from "./components/ch03/Title2";
+import Title3 from "./components/ch03/Title3";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Title />
       <Form />
       <Test />
+      <Title2 title="Javascript" author="Alex" />
+      <Title3 title="React" author="John" />
     </div>
   );
 }

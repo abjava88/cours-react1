@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
 
-const Form = () => {
+const Form = (props) => {
   return (
     <div>
         <h1>Form</h1>
