@@ -1,16 +1,18 @@
 import React from "react";
 
 const who = "Alex John";
-const greet = <h1>Hello {who}</h1>;
+const greet = <p>Hello {who}</p>;
 
 function helloWorld() {
   return "Hello World!";
 }
 const Test = () => {
-  return (<div>
-    <p>{greet}</p>
-    <p>{helloWorld()}</p>
-    </div>);
+  return (
+    <div>
+      <div>{greet}</div>
+      <div>{helloWorld()}</div>
+    </div>
+  );
 };
 
 export default Test;
