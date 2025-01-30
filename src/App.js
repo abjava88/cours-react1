@@ -1,3 +1,4 @@
+import Book1 from "./components/ch03/Book1";
 import Form from "./components/ch03/Form";
 import Test from "./components/ch03/Test";
 import Title from "./components/ch03/Title";
@@ -14,6 +15,10 @@ function App() {
       <Test />
       <Title2 title="Javascript" author="Alex" />
       <Title3 title="React" author="John" />
+      <Book1 titre="React avance">
+        <Title />
+        <Title2 title="Javascript" author="Alex" />
+      </Book1>
     </div>
   );
 }
