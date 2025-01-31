@@ -6,6 +6,7 @@ import Test from "./components/ch03/Test";
 import Title from "./components/ch03/Title";
 import Title2 from "./components/ch03/Title2";
 import Title3 from "./components/ch03/Title3";
+import TodayDate from "./components/ch03/TodayDate";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Book2 isNew={true}>
         <Title3 title="React" author="John" />
       </Book2>
+      <TodayDate />
     </div>
   );
 }
