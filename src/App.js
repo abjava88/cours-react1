@@ -7,6 +7,7 @@ import Title from "./components/ch03/Title";
 import Title2 from "./components/ch03/Title2";
 import Title3 from "./components/ch03/Title3";
 import TodayDate from "./components/ch03/TodayDate";
+import Counter from "./components/ch04/Counter";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Title3 title="React" author="John" />
       </Book2>
       <TodayDate />
+      <Counter />
     </div>
   );
 }
