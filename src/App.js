@@ -10,9 +10,13 @@ import TodayDate from "./components/ch03/TodayDate";
 import CallApi from "./components/ch04/CallApi";
 import Counter from "./components/ch04/Counter";
 import Counter2 from "./components/ch04/Counter2";
+import DataFetcher from "./components/ch04/Exercise";
 import PageCounter from "./components/ch04/PageCounter";
 import ToggleLight from "./components/ch04/ToggleLight";
 import ToggleLightPlus from "./components/ch04/ToggleLightPlus";
+import UserControls from "./components/ch04/UserControls";
+import UserInfo from "./components/ch04/UserInfo";
+import UserProvider from "./components/ch04/UserProvider";
 
 function App() {
   return (
@@ -39,6 +43,11 @@ function App() {
       <ToggleLightPlus />
       <Counter2 />
       <CallApi />
+      <DataFetcher />
+      <UserProvider>
+        <UserInfo />
+        <UserControls />
+      </UserProvider>
     </div>
   );
 }
