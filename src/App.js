@@ -10,8 +10,10 @@ import TodayDate from "./components/ch03/TodayDate";
 import CallApi from "./components/ch04/CallApi";
 import Counter from "./components/ch04/Counter";
 import Counter2 from "./components/ch04/Counter2";
-import DataFetcher from "./components/ch04/Exercise";
+import DataFetcher from "./components/ch04/DataFetcher";
 import PageCounter from "./components/ch04/PageCounter";
+import ThemedButton from "./components/ch04/ThemedButton";
+import ThemeProvider from "./components/ch04/ThemeProvider";
 import ToggleLight from "./components/ch04/ToggleLight";
 import ToggleLightPlus from "./components/ch04/ToggleLightPlus";
 import UserControls from "./components/ch04/UserControls";
@@ -21,6 +23,9 @@ import UserProvider from "./components/ch04/UserProvider";
 function App() {
   return (
     <div>
+      <ThemeProvider>
+        <ThemedButton>Themed Button</ThemedButton>
+      </ThemeProvider>
       <Title />
       <Title />
       <Title />
@@ -48,6 +53,7 @@ function App() {
         <UserInfo />
         <UserControls />
       </UserProvider>
+      
     </div>
   );
 }

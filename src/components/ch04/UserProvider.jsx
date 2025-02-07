@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 // Creating a context for managing user information
 export const UserContext = createContext();
 
-// A provider component to provide user data to its children
+// A provider component to provide user context data to its children
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
