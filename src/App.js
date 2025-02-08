@@ -23,10 +23,23 @@ import UserProvider from "./components/ch04/UserProvider";
 import Home from "./components/ch05/Home";
 import About from "./components/ch05/About";
 import PageNotFound from "./components/ch05/PageNotFound";
+import UserList from "./components/ch05/UserList";
+
+const usersList = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Jane" },
+  { id: 3, name: "Alice" },
+  { id: 4, name: "Bob" },
+  { id: 5, name: "Abbes" },
+  { id: 6, name: "Aron" },
+  { id: 7, name: "Abram" },
+];
 
 function App() {
   return (
     <div>
+      {/* List des utilisateurs */}
+      <UserList users={usersList} />
       {/* use of react router dom */}
       <Router>
         <div>
