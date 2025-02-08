@@ -24,6 +24,7 @@ import Home from "./components/ch05/Home";
 import About from "./components/ch05/About";
 import PageNotFound from "./components/ch05/PageNotFound";
 import UserList from "./components/ch05/UserList";
+import Pagination from "./components/ch05/Pagination";
 
 const usersList = [
   { id: 1, name: "John" },
@@ -38,6 +39,8 @@ const usersList = [
 function App() {
   return (
     <div>
+      {/* Pagination */}
+      <Pagination />
       {/* List des utilisateurs */}
       <UserList users={usersList} />
       {/* use of react router dom */}
