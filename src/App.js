@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Book1 from "./components/ch03/Book1";
 import { Book2 } from "./components/ch03/Book2";
 import Form from "./components/ch03/Form";
@@ -19,10 +20,35 @@ import ToggleLightPlus from "./components/ch04/ToggleLightPlus";
 import UserControls from "./components/ch04/UserControls";
 import UserInfo from "./components/ch04/UserInfo";
 import UserProvider from "./components/ch04/UserProvider";
+import Home from "./components/ch05/Home";
+import About from "./components/ch05/About";
+import PageNotFound from "./components/ch05/PageNotFound";
 
 function App() {
   return (
     <div>
+      {/* use of react router dom */}
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+          </nav>
+          <hr />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </div>
+      </Router>
+      <br />
       <ThemeProvider>
         <ThemedButton>Themed Button</ThemedButton>
       </ThemeProvider>
@@ -53,7 +79,6 @@ function App() {
         <UserInfo />
         <UserControls />
       </UserProvider>
-      
     </div>
   );
 }
