@@ -25,6 +25,7 @@ import About from "./components/ch05/About";
 import PageNotFound from "./components/ch05/PageNotFound";
 import UserList from "./components/ch05/UserList";
 import Pagination from "./components/ch05/Pagination";
+import SimpleForm from "./components/ch06/SimpleForm";
 
 const usersList = [
   { id: 1, name: "John" },
@@ -39,6 +40,7 @@ const usersList = [
 function App() {
   return (
     <div>
+      <SimpleForm />
       {/* Pagination */}
       <Pagination />
       {/* List des utilisateurs */}
