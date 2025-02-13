@@ -26,6 +26,7 @@ import PageNotFound from "./components/ch05/PageNotFound";
 import UserList from "./components/ch05/UserList";
 import Pagination from "./components/ch05/Pagination";
 import SimpleForm from "./components/ch06/SimpleForm";
+import FocusInput from "./components/ch06/FocusInput";
 
 const usersList = [
   { id: 1, name: "John" },
@@ -40,6 +41,7 @@ const usersList = [
 function App() {
   return (
     <div>
+      <FocusInput />
       <SimpleForm />
       {/* Pagination */}
       <Pagination />
