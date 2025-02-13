@@ -28,6 +28,7 @@ import Pagination from "./components/ch05/Pagination";
 import SimpleForm from "./components/ch06/SimpleForm";
 import FocusInput from "./components/ch06/FocusInput";
 import CompleteForm from "./components/ch06/CompleteForm";
+import { Lecture } from "./components/ch07/Examples";
 
 const usersList = [
   { id: 1, name: "John" },
@@ -42,6 +43,7 @@ const usersList = [
 function App() {
   return (
     <div>
+      <Lecture />
       <CompleteForm />
       <FocusInput />
       <SimpleForm />
