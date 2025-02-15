@@ -29,6 +29,7 @@ import SimpleForm from "./components/ch06/SimpleForm";
 import FocusInput from "./components/ch06/FocusInput";
 import CompleteForm from "./components/ch06/CompleteForm";
 import { Lecture } from "./components/ch07/Examples";
+import Posts from "./components/ch07/Post/Posts";
 
 const usersList = [
   { id: 1, name: "John" },
@@ -42,68 +43,7 @@ const usersList = [
 
 function App() {
   return (
-    <div>
-      <Lecture />
-      <CompleteForm />
-      <FocusInput />
-      <SimpleForm />
-      {/* Pagination */}
-      <Pagination />
-      {/* List des utilisateurs */}
-      <UserList users={usersList} />
-      {/* use of react router dom */}
-      <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </nav>
-          <hr />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </div>
-      </Router>
-      <br />
-      <ThemeProvider>
-        <ThemedButton>Themed Button</ThemedButton>
-      </ThemeProvider>
-      <Title />
-      <Title />
-      <Title />
-      <Form />
-      <Test />
-      <Title2 title="Javascript" author="Alex" />
-      <Title3 title="React" author="John" />
-      <Book1 titre="React avance">
-        <Title />
-        <Title2 title="Javascript" author="Alex" />
-      </Book1>
-      <Profile />
-      <Book2 isNew={true}>
-        <Title3 title="React" author="John" />
-      </Book2>
-      <TodayDate />
-      <Counter />
-      <PageCounter />
-      <ToggleLight />
-      <ToggleLightPlus />
-      <Counter2 />
-      <CallApi />
-      <DataFetcher />
-      <UserProvider>
-        <UserInfo />
-        <UserControls />
-      </UserProvider>
-    </div>
+    <Posts />
   );
 }
 
